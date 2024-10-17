@@ -1,0 +1,14 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th ,td{
+    border: 2px solid chartreuse;
+    padding: 10px;
+}
+h2{
+    color: red;
+    text-align: center;
+    font-family: "Devanagari MT", serif;
+}
