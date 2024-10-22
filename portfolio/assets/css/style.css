@@ -1,18 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -147,7 +133,7 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
+  background-color: var(--bluetiful);
   color: var(--cadet-blue-crayola);
   font-size: 1.6rem;
   line-height: 1.6;
