@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+   
+    {% block title %}
+    <title>About Us - My Brand</title>
+    {% endblock title %}
+        
+    
+{% block body %}
+    
+<!-- Header Section -->
+<section class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1>About Us</h1>
+        <p class="lead">Learn more about our story, mission, and team.</p>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Story</h2>
+        <p>Our journey started with a mission to provide innovative solutions to simplify and enrich our customers' lives. From humble beginnings, we have grown into a team of passionate professionals dedicated to delivering excellence in every aspect of our work.</p>
+        <p>Over the years, we have helped countless clients achieve their goals through our dedication to quality and a customer-centric approach. We believe in pushing boundaries and are constantly seeking new ways to make a positive impact.</p>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Mission</h2>
+        <p class="text-center">Our mission is to deliver top-notch solutions that empower businesses and individuals. We strive to create a positive impact in every project we undertake, ensuring that our clients' needs are met with professionalism and expertise.</p>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Values</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h3>Integrity</h3>
+                <p>We believe in honesty and transparency in all our interactions. Building trust with our clients is at the core of our business.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Innovation</h3>
+                <p>We embrace new ideas and technologies to provide our clients with cutting-edge solutions.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Excellence</h3>
+                <p>We strive for excellence in everything we do, from the smallest task to the largest project.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meet the Team Section -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Meet the Team</h2>
+        <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-md-4 text-center">
+                <img src="{% static 'images/image1.jpeg' %}" class="rounded-circle mb-3" alt="Team Member 1" width="150" height="150">
+                <h4>Mike Muturi</h4>
+                <p>CEO & Founder</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-md-4 text-center">
+                <img src="{% static 'images/image6.png' %}" class="rounded-circle mb-3" alt="Team Member 2" width="150" height="150">
+                <h4>Jose</h4>
+                <p>Chief Technology Officer</p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-4 text-center">
+                <img src="{% static 'images/image4.png' %}" class="rounded-circle mb-3" alt="Team Member 3" width="150" height="150">
+                <h4>Emily Parseina</h4>
+                <p>Head of Marketing</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

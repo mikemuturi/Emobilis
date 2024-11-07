@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+<title>Blog</title>
+{% endblock title %}
+    
+    
+
+
+{% block body %}
+    
+
+    
+    <div class="container mt-5">
+        <h2 class="text-center">Latest Blog Posts</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/image3.png' %}" class="card-img-top" alt="Blog 1">
+                    <div class="card-body">
+                        <h5 class="card-title">How to Improve Your Website's SEO</h5>
+                        <p class="card-text">Learn some easy-to-implement tips for improving your website’s SEO and getting more traffic.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/image5.png' %}" class="card-img-top" alt="Blog 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App Development Trends</h5>
+                        <p class="card-text">Stay updated with the latest trends and innovations in mobile app development.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/image6.png' %}" class="card-img-top" alt="Blog 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Why Digital Marketing is Essential</h5>
+                        <p class="card-text">Discover the importance of digital marketing and how it can help grow your business.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    {% endblock body %}

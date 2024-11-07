@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+<title>Our Services</title> 
+{% endblock title %}
+    
+  
+ 
+ {% block body %}
+    
+
+    
+
+    <div class="container mt-5">
+        <h2 class="text-center">Our Services</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/image3.png' %}" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">We provide cutting-edge web development services to bring your business online. Custom-built websites with responsive designs.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/image6.png' %}" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App Development</h5>
+                        <p class="card-text">Get your brand on mobile with user-friendly and feature-rich mobile apps for iOS and Android platforms.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/image5.png' %}" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Marketing</h5>
+                        <p class="card-text">Enhance your online presence and reach a larger audience with our tailored digital marketing strategies.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock body %}

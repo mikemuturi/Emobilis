@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+{% block title %}
+<title>Simple Landing Page</title>  
+{% endblock title %}
+     
+   
+   
+
+{% block body %}
+    
+
+    
+
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Features</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="p-4">
+                    <i class="bi bi-speedometer2 display-4 text-primary"></i>
+                    <h3>Fast Performance</h3>
+                    <p>Our product is designed to be efficient and quick, offering a smooth user experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="p-4">
+                    <i class="bi bi-shield-lock display-4 text-primary"></i>
+                    <h3>Secure</h3>
+                    <p>We prioritize your privacy and security, with features built to protect your data.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="p-4">
+                    <i class="bi bi-phone display-4 text-primary"></i>
+                    <h3>Mobile-Friendly</h3>
+                    <p>Accessible on any device, providing flexibility and ease of use on the go.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="bg-light py-5">
+    <div class="container">
+        <!-- Section Heading -->
+        <h2 class="text-center mb-4">About Us</h2>
+        
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <img src="{% static 'images/image3.png' %}" alt="About Us Image" class="img-fluid rounded" width="500px" height="400px">
+            </div>
+            <!-- Text Content Column -->
+            <div class="col-md-6">
+                <p class="lead">Our mission is to deliver the best solutions to our customers and make their lives easier.</p>
+                <p>We strive to provide top-notch services and go above and beyond to exceed our clients' expectations. Our team is dedicated to innovation, quality, and reliability, making sure we stay at the forefront of our industry.</p>
+                <p>With a customer-focused approach, we believe in creating solutions that not only meet but also anticipate our clients' needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+{% endblock body %}
